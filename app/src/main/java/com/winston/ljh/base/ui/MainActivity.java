@@ -24,6 +24,7 @@ public class MainActivity extends BaseActivity {
 
     @Override
     protected void initListener() {
+        findViewById(R.id.text).setOnClickListener(this);
     }
 
     @Override
@@ -33,5 +34,12 @@ public class MainActivity extends BaseActivity {
 
     @Override
     public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.text:
+                startActivity(NoteActivity.class);
+                break;
+        }
     }
+
+
 }

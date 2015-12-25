@@ -1,27 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.winston.ljh.base" >
+    package="com.winston.ljh.base">
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
         <activity
             android:name=".ui.MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar" >
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ui.NoteActivity" />
     </application>
 
     <!--WIFI网络状态信息权限 -->
-    <uses-permission android:name="ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="ACCESS_NETWORK_STATE" />
     <!--电池状态权限 -->
     <!--<uses-permission android:name="BATTERY_STATE"/>-->
     <!--连接匹配的蓝牙设备权限 -->
@@ -45,7 +46,7 @@
     <!-- 访问闪光灯的权限 -->
     <!--<uses-permission android:name="FLASHLIGHT"/>-->
     <!-- 允许访问网络的权限 -->
-    <uses-permission android:name="INTERNET"/>
+    <uses-permission android:name="INTERNET" />
     <!-- 允许修改全局声音的权限 -->
     <!--<uses-permission android:name="MODIFY_AUDIO_SETTINGS"/>-->
     <!-- 允许监听、控制、取消呼出电话的权限 -->
@@ -68,7 +69,7 @@
     <!--<uses-permission android:name="RECEIVE_SMS"/>-->
     <!-- 允许录音的权限 -->
     <!--<uses-permission android:name="RECORD_AUDIO"/>-->
-     <!--允许发送短信的权限 -->
+    <!--允许发送短信的权限 -->
     <!--<uses-permission android:name="SEND_SMS"/>-->
     <!-- 设置屏幕方向权限 -->
     <!--<uses-permission android:name="SET_ORIENTATION"/>-->
@@ -88,11 +89,6 @@
     <!--<uses-permission android:name="WRITE_OWNER_DATA"/>-->
     <!--  允许写短信的权限 -->
     <!--<uses-permission android:name="WRITE_SMS"/>-->
-
-
-
-
-
 
 
 </manifest>

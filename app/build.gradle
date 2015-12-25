@@ -27,4 +27,5 @@ dependencies {
     compile 'com.loopj.android:android-async-http:1.4.9'
     compile 'com.netflix.feign:feign-gson:8.12.1'
     compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    compile 'de.greenrobot:greendao:2.1.0'
 }

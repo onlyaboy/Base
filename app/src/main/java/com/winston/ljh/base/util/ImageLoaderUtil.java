@@ -25,7 +25,7 @@ public class ImageLoaderUtil {
                 .memoryCacheSize(50 * 1024 * 1024)
                 .denyCacheImageMultipleSizesInMemory().diskCacheFileCount(1000)
                 .defaultDisplayImageOptions(getDefaultOption())
-                .tasksProcessingOrder(QueueProcessingType.FIFO).build();
+                .tasksProcessingOrder(QueueProcessingType.LIFO).build();
         ImageLoader.getInstance().init(config);
     }
 
